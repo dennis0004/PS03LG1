@@ -535,15 +535,15 @@ if __name__ == '__main__':
     # language game (LG) (speaker, listener)
     # PS (choose to play with anyone actively); rPS = reward
     # (for each player: choose one partner)
-    # Q: change Q-values in "both directions"; if success, lower Q-values for other Q(c,w)
+    # Q: bi-directional; if success, lower Q-values for other Q(c,w)
 
     dirPrefix = '.'
 
     simStart = 1
-    simEnd = 1
+    simEnd = 100
 
     tStart = 0
-    tEnd = 5000
+    tEnd = 300000
 
     interactionName = 'seq-PS03'
     interactionStr = interactionName
